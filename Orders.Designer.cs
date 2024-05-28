@@ -1,4 +1,4 @@
-﻿namespace TelephoneComp
+﻿namespace ThreeD_Store
 {
     partial class Orders
     {

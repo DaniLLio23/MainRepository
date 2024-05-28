@@ -5,6 +5,8 @@ VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreeD_Store", "ThreeD_Store.csproj", "{EB35DCA9-32A3-46C3-93D4-976E571941A9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreeD_Store_UnitTest", "..\ThreeD_Store_UnitTest\ThreeD_Store_UnitTest.csproj", "{D2394994-983F-4FA6-88B9-B917F69FEECC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{EB35DCA9-32A3-46C3-93D4-976E571941A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB35DCA9-32A3-46C3-93D4-976E571941A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB35DCA9-32A3-46C3-93D4-976E571941A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2394994-983F-4FA6-88B9-B917F69FEECC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2394994-983F-4FA6-88B9-B917F69FEECC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2394994-983F-4FA6-88B9-B917F69FEECC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2394994-983F-4FA6-88B9-B917F69FEECC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,6 +1,11 @@
-﻿namespace TelephoneComp
+﻿using DocumentFormat.OpenXml.Drawing.Charts;
+using DocumentFormat.OpenXml.Office2013.Drawing.ChartStyle;
+using System;
+using System.Linq;
+
+namespace ThreeD_Store
 {
-    class User
+    internal class User
     {
         int id = 0;
         string name, post, login, sName, mName;
@@ -8,6 +13,11 @@
             CreatorsAccess, UsersAccess;
         string BuyersRight, OrdersRight, OrderItemRight, ItemsRight, ItemTypesRight, MaterialsRight,
             CreatorsRight, UsersRight;
+
+        static public int minLength = 6;
+        static public int maxLength = 20;
+        static public bool capitals = true;
+        static public bool specials = true;
 
         public User(string post, string name, bool BuyersAccess, bool OrdersAccess, bool OrderItemAccess,
             bool ItemsAccess, bool ItemTypesAccess, bool MaterialsAccess, bool CreatorsAccess, bool UsersAccess,
@@ -59,5 +69,15 @@
         public string Login { get => login; set => login = value; }
         public string SName { get => sName; set => sName = value; }
         public string MName { get => mName; set => mName = value; }
+
+        static public bool CorrectPassword(string password)
+        {
+            char[] passwordInChars = password.ToCharArray();
+            if (passwordInChars.Length < minLength ) { return false; }
+            if (passwordInChars.Length > maxLength ) { return false; }
+            if (!capitals && password.Any(char.IsUpper)) { return false; }
+            if (!specials && password.Any(char.IsSymbol)) { return false; }
+            return true;
+        }
     }
 }

@@ -5,7 +5,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Windows.Forms;
 
-namespace TelephoneComp
+namespace ThreeD_Store
 {
     public partial class MainMenu : Form
     {

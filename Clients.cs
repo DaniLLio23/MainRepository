@@ -7,7 +7,7 @@ using System;
 using System.Data;
 using System.Windows.Forms;
 
-namespace TelephoneComp
+namespace ThreeD_Store
 {
     public partial class Clients : Form
     {
